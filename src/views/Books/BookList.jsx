@@ -23,6 +23,7 @@ function BookList() {
       <ul className="book-list" aria-label="book list">
         {books.map((book) => (
           <li key={book.book_id}>
+            {/* {console.log(book)} */}
             <Book book={book} />
           </li>
         ))}
