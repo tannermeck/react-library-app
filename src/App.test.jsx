@@ -12,4 +12,5 @@ it('renders a welcome message when signed out', async () => {
   await screen.findByRole('list', { name: 'book list' })
 
   expect(container).toMatchSnapshot()
+  
 })
