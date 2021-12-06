@@ -6,7 +6,6 @@ import './booklist.css'
 
 function BookDetail() {
   const { id } = useParams() // TODO: Use id from route
-  console.log('ID', id)
   const [book, setBook] = useState(null)
 
   useEffect(() => {
@@ -17,6 +16,7 @@ function BookDetail() {
   return (
     <>
       <NavLink className="link" to="/books">{`<< Back to Catalog`}</NavLink>
+      <hr className="lineBreak" />
       <Book book={book} showDetail navigate />
     </>
   )

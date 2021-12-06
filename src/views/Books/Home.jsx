@@ -5,7 +5,10 @@ function Home() {
     <>
       <h3>Welcome to Tanner's Library of Computer Science!</h3>
       <p>
-        Check out the amazing selection of books in our <Link to="/books">catalog</Link>
+        Check out the amazing selection of books in our{' '}
+        <Link className="link" to="/books">
+          catalog
+        </Link>
       </p>
     </>
   )
