@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Author from '../author/Author'
 import './Book.css'
 
@@ -16,9 +16,7 @@ function Book({
 }) {
   return (
     <article className="book">
-      <h3>
-        <Link to={`books/${bookId}`}>{title}</Link>
-      </h3>
+      <h3>{title}</h3>
       <address>
         {authors.map((author) => (
           <Author key={author.author_id} author={author} />
