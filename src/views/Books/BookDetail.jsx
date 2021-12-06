@@ -17,7 +17,7 @@ function BookDetail() {
     <>
       <NavLink className="link" to="/books">{`<< Back to Catalog`}</NavLink>
       <hr className="lineBreak" />
-      <Book book={book} showDetail navigate />
+      <Book book={book} showDetail />
     </>
   )
 }
