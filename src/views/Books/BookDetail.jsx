@@ -2,6 +2,7 @@ import { useParams, NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Book from '../../components/book/Book'
 import { getBookById } from '../../services/books'
+import './booklist.css'
 
 function BookDetail() {
   const { id } = useParams() // TODO: Use id from route
@@ -15,7 +16,7 @@ function BookDetail() {
   if (!book) return <h3>Loading book...</h3>
   return (
     <>
-      <NavLink to="/books">Back to Catalog</NavLink>
+      <NavLink className="link" to="/books">{`<< Back to Catalog`}</NavLink>
       <Book book={book} showDetail navigate />
     </>
   )
